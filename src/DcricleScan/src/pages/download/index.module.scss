@@ -1,0 +1,98 @@
+.main {
+  position: relative;
+  background: url("download_bg.png");
+  background-size: 100% 100%;
+  padding-top: 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download_main {
+  :global {
+    .ant-modal {
+      height: 100%;
+      .ant-modal-content {
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        .ant-modal-body {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+
+.download_wrap_wx_zhiying {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  width: 251px;
+  height: 100px;
+  background: transparent;
+  display: flex;
+}
+.download_wrap_wx_zhiying img {
+  width: 100%;
+  height: 100%;
+}
+.icon {
+  width: 99px;
+  height: 82px;
+  display: flex;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.text_pic {
+  width: 248px;
+  height: 56px;
+  display: flex;
+}
+.btn{
+  width: 202px;
+  height: 44px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  padding-left: 28px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.android_btn {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  background: #FFFFFF linear-gradient(220deg, #9ED85A 0%, #71DA75 100%);
+}
+.google_btn {
+  background: #fff;
+  color: #000;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.android {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+}
+.appStore_btn{
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  background: #CFCFCF;
+}
+.bg2 {
+  height: 455px;
+  width: 100%;
+  max-width: 400px;
+  background: url("download_bg2.png");
+  background-size: 100% 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}

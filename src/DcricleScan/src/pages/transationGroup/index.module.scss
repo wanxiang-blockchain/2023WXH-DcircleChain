@@ -1,0 +1,91 @@
+.container{
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%);
+  padding: 10px 20px 20px 20px;
+  box-sizing: border-box;
+  .infoItem{
+    .infoTitle{
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      line-height: 20px;
+    }
+    .infoContent{
+      margin-top: 8px;
+      word-break: break-all; /* 将单词截断到多行 */
+      font-size: 14px;
+      font-weight: 400;
+      color: #969799;
+
+    }
+    .blue{
+      color: #3470E9;
+    }
+  }
+  .overviewWrap{
+    margin-top: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #F2F3F5;
+    .title{
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+    }
+    .infoWrap{
+      margin-top: 10px;
+      .signData {
+        word-break: break-all;
+        font-size: 12px;
+        height: 44px;
+        font-weight: 400;
+        color: #646566;
+        line-height: 17px;
+        margin-top: 9px;
+        width: 100%;
+        padding: 5px 7px;
+        box-sizing: border-box;
+        background: #F6F6F6;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .statusWrap{
+      display: flex;
+      align-items: center;
+    }
+    .statusImg{
+      width: 14px;
+      height: 14px;
+      margin-right: 6px;
+    }
+  }
+  .copyImg{
+    margin-left: 6px;
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (min-width: 1330px) {
+  .container {
+    width: 1290px;
+    margin: 0 auto;
+    background: #FCFCFE;
+    padding: 72px 0 70px 0;
+    box-sizing: border-box;
+  }
+  .signData{
+    width: calc(100% - 224px) !important;
+    margin-left: 224px;
+  }
+  .infoItem {
+    display: flex;
+    align-items: center;
+    .infoContent{
+      margin-top: 0 !important;
+    }
+  }
+}

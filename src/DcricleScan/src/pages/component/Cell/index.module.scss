@@ -1,0 +1,33 @@
+.infoItem{
+  .infoTitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #969799;
+    line-height: 20px;
+  }
+  .infoContent{
+    margin-top: 8px;
+    word-break: break-all; /* 将单词截断到多行 */
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .blue{
+    color: #3470E9;
+  }
+}
+.infoItem:not(:first-child){
+  margin-top: 15px;
+}
+@media (min-width: 1330px) {
+  .translationInfoItem {
+    display: flex;
+    align-items: center;
+    .infoTitle{
+      width: 224px;
+    }
+    .infoContent{
+      margin-top: 0 !important;
+    }
+  }
+}

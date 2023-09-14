@@ -1,0 +1,30 @@
+.skeletonWrap{
+  padding: 0 20px;
+  :global {
+    .ant-skeleton .ant-skeleton-content .ant-skeleton-title{
+      width: 122px !important;
+      height: 20px;
+    }
+    .ant-skeleton-paragraph li:first-child{
+      height: 34px !important;
+    }
+    .ant-skeleton-paragraph li:nth-child(2){
+      height: 114px !important;
+    }
+    .ant-skeleton-paragraph li:nth-child(3){
+      margin-top: 25px !important;
+      height: 34px !important;
+    }
+    .ant-skeleton-paragraph li:nth-child(4){
+      height: 20px !important;
+    }
+    .ant-skeleton-paragraph li:nth-child(5){
+      margin-top: 43px !important;
+      height: 34px !important;
+    }
+    .ant-skeleton-paragraph li:nth-child(6){
+      width: 100% !important;
+      height: 204px !important;
+    }
+  }
+}

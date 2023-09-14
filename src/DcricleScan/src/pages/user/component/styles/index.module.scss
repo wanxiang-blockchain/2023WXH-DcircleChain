@@ -1,0 +1,214 @@
+.tableContainer{
+  width: calc(100vw - 30px);
+  min-height: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid #F2F3F5;
+  margin-top: 10px;
+  border-radius: 8px;
+  //background: #FFFFFF;
+  .tabWrap{
+    padding-top: 13px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F2F3F5;
+    position: relative;
+    .tabItem{
+      display: flex;
+      align-items: center;
+      width: 326px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      padding: 6px 7px 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #F2F3F5;
+      box-sizing: border-box;
+      .tabIcon1{
+        width: 20px;
+        height: 20px;
+      }
+      .tabItemText{
+        width: 260px;
+        margin: 0 5px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000;
+      }
+      .tabDown{
+        margin-top: 2px;
+        width: 12px;
+        height: 8px;
+      }
+    }
+    .showDownList{
+      position: absolute;
+      top: 54px;
+      left: 12px;
+      z-index: 99;
+      width: 331px;
+      display: flex;
+      padding: 12px;
+      background: #FFFFFF;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.13);
+      border-radius: 6px;
+      border: 1px solid #F2F3F5;
+      box-sizing: border-box;
+      .tabIcon2{
+        width: 20px;
+        height: 20px;
+      }
+      .tabItemText{
+        margin: 0 5px;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+  }
+}
+.tableWrap{
+  width: 1260px;
+  :global {
+    .ant-table-wrapper .ant-table{
+      border-radius: 0;
+    }
+    //.ant-table-wrapper .ant-table-tbody >tr >td{
+    //  border-bottom: none;
+    //}
+    .ant-table-cell {
+      //width: 130px;
+      background: #fff !important;
+    }
+    .ant-table-expanded-row-fixed {
+      padding: 16px 0px;
+    }
+    .ant-table-wrapper .ant-table-thead >tr>th:not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+      background: #FFFFFF;
+    }
+    .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      background: #FFFFFF;
+    }
+    .ant-table-wrapper .ant-table-thead>tr>th, .ant-table-wrapper .ant-table.ant-table-small .ant-table-thead>tr>th{
+      padding: 16px 0 16px 16px;
+    }
+    .ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody>tr>td{
+      padding: 16px 0 16px 16px;
+    }
+  }
+}
+.fiveTableWrap, .tabWrap{
+  width: 1080px;
+}
+.fourWrap{
+  width: 846px;
+}
+.tableWrap:not(:first-child){
+  margin-top: 6px;
+  :global {
+    .ant-table-content {
+      min-height: 220px;
+    }
+  }
+}
+.firstTableWrap{
+  margin-top: 0 !important;
+  :global {
+    .ant-table-content {
+      min-height: unset !important;
+    }
+  }
+}
+.secondTableWrap{
+  :global {
+    .ant-table-content {
+      min-height: unset !important;
+    }
+  }
+}
+@media (min-width: 1330px) {
+  .tableContainer{
+    width: 1300px;
+    overflow: hidden;
+  }
+  .tableWrap, .tabWrap{
+    width: 1300px;
+  }
+  .groupTableWrap{
+    width: 1300px;
+  }
+}
+.hide {
+  display: none;
+}
+.wrapCell {
+  display: flex;
+  align-items: center;
+}
+.WithIconCell{
+  width: 172px;
+}
+.tipsIcon {
+  width: 13px;
+  height: 13px;
+  display: flex;
+  margin-right: 2px;
+}
+.defineCell {
+  color: #1E65F3;
+  width: 172px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.showText {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cell {
+  width: 172px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cell200 {
+  width: 200px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.titleS {
+  font-weight: bold;
+  display: inline-block;
+  width: 172px;
+}
+.titleSI {
+  font-weight: bold;
+  display: inline-block;
+}
+.titleS200 {
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+}
+:global {
+  .ant-popover-arrow {
+    --antd-arrow-background-color: #1A1A1A;
+  }
+  .ant-popover-arrow::after {
+    background: #1A1A1A !important;
+  }
+  .ant-popover-inner {
+    background-color: #1A1A1A !important;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.08);
+    .ant-popover-inner-content {
+      color: #fff;
+    }
+  }
+  .ant-popover-content {
+    max-width: 230px !important;
+  }
+}

@@ -1,0 +1,29 @@
+.headerWrap {
+  display: none;
+}
+@media (min-width: 1330px) {
+  .headerWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(151, 164, 175, 0.05);
+    border: 1px solid #E9ECEF;
+
+    .logoWrap {
+      width: 1290px;
+      margin: 0 auto;
+      cursor: pointer;
+
+      .logo {
+        width: 113px;
+        height: 30px;
+      }
+    }
+  }
+}

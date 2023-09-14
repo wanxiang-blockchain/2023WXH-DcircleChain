@@ -1,0 +1,124 @@
+.container{
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%);
+  padding: 10px 15px 20px 15px;
+  box-sizing: border-box;
+  .titleWrap{
+    .title{
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+    }
+    .content{
+      width: 100%;
+      word-break: break-all; /* 将单词截断到多行 */
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+      line-height: 20px;
+    }
+    .copyImg{
+      margin-left: 6px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .overviewWrap{
+    margin-top: 15px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #F2F3F5;
+    .title{
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+    }
+    .infoWrap{
+      margin-top: 10px;
+    }
+  }
+  .btnWrap{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    .btn{
+      margin-right: 10px;
+      padding: 0px 10px;
+      box-sizing: border-box;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #DBDBDB;
+      font-size: 14px;
+      font-weight: 400;
+      color: #646566;
+      touch-action: manipulation; // 处理IOS点击出现的阴影效果
+      -webkit-tap-highlight-color: transparent; // 处理IOS点击出现的阴影效果
+      cursor: pointer;
+    }
+    .activeBtn{
+      padding: 0px 10px;
+      box-sizing: border-box;
+      height: 32px;
+      line-height: 32px;
+      border: none;
+      color: #FFFFFF;
+      background: linear-gradient(270deg, #71DA75 0%, #9ED85A 100%);
+    }
+  }
+}
+
+@media (min-width: 1330px) {
+  body{
+    background: #FCFCFE;
+  }
+  .container{
+    width: 1290px;
+    margin: 0 auto;
+    background: #FCFCFE;
+    padding: 82px 20px 20px 0;
+  }
+  .titleWrap{
+    display: flex;
+    align-items: center;
+    .title{
+      width: 110px;
+      margin: 0 !important;
+    }
+    .content{
+      font-weight: 400 !important;
+      margin-left: 10px;
+    }
+  }
+}
+
+/*滚动条样式*/
+body:hover::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2);
+}
+body:hover::-webkit-scrollbar-track {
+  box-shadow: unset;
+  border-radius: 0;
+  background: transparent;
+}
+body::-webkit-scrollbar {
+  width: 2px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  box-shadow: unset;
+  background: transparent;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: unset;
+  border-radius: 0;
+  background: transparent;
+}

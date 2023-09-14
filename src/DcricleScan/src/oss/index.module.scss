@@ -1,0 +1,139 @@
+.playerBox {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  //background: #ececec;
+  border-radius: 10px;
+  overflow: hidden;
+  //padding: 5px;
+  .noPosterWrap{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #F1FCF1 0%, #F6FCEF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @keyframes rotateAni {
+      0%{-webkit-transform:rotate(0deg);}
+      25%{-webkit-transform:rotate(90deg);}
+      50%{-webkit-transform:rotate(180deg);}
+      75%{-webkit-transform:rotate(270deg);}
+      100%{-webkit-transform:rotate(360deg);}
+    }
+    .noPosterImg{
+      width: 24px;
+      height: 24px;
+      animation: rotateAni 1s linear infinite;
+    }
+  }
+  :global {
+    .ant-modal {
+      position: unset !important;
+    }
+    .ant-modal .ant-modal-content {
+      position: unset !important;
+      padding: 0 !important;
+      background: transparent;
+      box-shadow: none;
+      .ant-modal-close {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 600;
+        overflow: hidden;
+      }
+    }
+    .ant-modal .ant-modal-content .ant-modal-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.imgPreview {
+  :global {
+    .ant-modal {
+      position: unset !important;
+    }
+    .ant-modal .ant-modal-content {
+      position: unset !important;
+      padding: 0 !important;
+      background: transparent;
+      box-shadow: none;
+      .ant-modal-close {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 600;
+        overflow: hidden;
+      }
+    }
+    .ant-modal .ant-modal-content .ant-modal-body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  }
+}
+.player {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 44px;
+  -webkit-tap-highlight-color: transparent;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  cursor: pointer;
+  z-index: 1;
+  .downloadProcess {
+    position: absolute;
+    top: 0px; bottom: 0px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: rgba(0,0,0,.3);
+    .downloadSuccess {
+      background: #fff;
+      border-radius: 50%;
+    }
+  }
+}
+
+.video_wrap {
+  //height: 500px;
+  //width: 300px;
+}
+.progress{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1088 !important;
+  transform: translate(-50%, -50%);
+}
+//:global{
+//  .ant-image-preview-root .ant-image-preview-mask {
+//    background-color: transparent;
+//  }
+//}

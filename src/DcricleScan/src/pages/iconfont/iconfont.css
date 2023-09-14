@@ -1,0 +1,273 @@
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3629678 */
+  src: url('https://at.alicdn.com/t/c/font_3629678_w9yowm9e82a.woff2?t=1692281226876') format('woff2'),
+  url('https://at.alicdn.com/t/c/font_3629678_w9yowm9e82a.woff?t=1692281226876') format('woff'),
+  url('https://at.alicdn.com/t/c/font_3629678_w9yowm9e82a.ttf?t=1692281226876') format('truetype'),
+  url('https://at.alicdn.com/t/c/font_3629678_w9yowm9e82a.svg?t=1692281226876#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chuangzaoli:before {
+  content: "\e6a7";
+}
+
+.icon-jiaoyicishu:before {
+  content: "\e6a4";
+}
+
+.icon-chuanboli1:before {
+  content: "\e6a5";
+}
+
+.icon-xiaofeili:before {
+  content: "\e6a6";
+}
+
+.icon-xiaofeirenshu:before {
+  content: "\e6a1";
+}
+
+.icon-jiaoyipianshu:before {
+  content: "\e6a2";
+}
+
+.icon-chuanboli:before {
+  content: "\e6a3";
+}
+
+.icon-fanyi:before {
+  content: "\e6a0";
+}
+
+.icon-read1:before {
+  content: "\e69e";
+}
+
+.icon-fail:before {
+  content: "\e69f";
+}
+
+.icon-os_stow:before {
+  content: "\e69a";
+}
+
+.icon-os_narrow:before {
+  content: "\e69b";
+}
+
+.icon-os_close:before {
+  content: "\e69c";
+}
+
+.icon-os_enlarge:before {
+  content: "\e69d";
+}
+
+.icon-PhotoUpload:before {
+  content: "\e699";
+}
+
+.icon-like:before {
+  content: "\e696";
+}
+
+.icon-dislike:before {
+  content: "\e697";
+}
+
+.icon-xiafan:before {
+  content: "\e698";
+}
+
+.icon-read:before {
+  content: "\e692";
+}
+
+.icon-unread:before {
+  content: "\e693";
+}
+
+.icon-quote:before {
+  content: "\e694";
+}
+
+.icon-SendFail:before {
+  content: "\e695";
+}
+
+.icon-window_stow:before {
+  content: "\e68e";
+}
+
+.icon-window_enlarge:before {
+  content: "\e68f";
+}
+
+.icon-window_narrow:before {
+  content: "\e690";
+}
+
+.icon-window_close:before {
+  content: "\e691";
+}
+
+.icon-alarm1:before {
+  content: "\e68c";
+}
+
+.icon-success:before {
+  content: "\e68d";
+}
+
+.icon-data:before {
+  content: "\e66c";
+}
+
+.icon-add:before {
+  content: "\e66d";
+}
+
+.icon-close:before {
+  content: "\e66e";
+}
+
+.icon-delete:before {
+  content: "\e66f";
+}
+
+.icon-AddFriend:before {
+  content: "\e670";
+}
+
+.icon-copy:before {
+  content: "\e671";
+}
+
+.icon-clean:before {
+  content: "\e672";
+}
+
+.icon-download:before {
+  content: "\e673";
+}
+
+.icon-left:before {
+  content: "\e674";
+}
+
+.icon-folder:before {
+  content: "\e675";
+}
+
+.icon-expand:before {
+  content: "\e676";
+}
+
+.icon-invite:before {
+  content: "\e677";
+}
+
+.icon-exit:before {
+  content: "\e678";
+}
+
+.icon-jietu:before {
+  content: "\e679";
+}
+
+.icon-expression:before {
+  content: "\e67a";
+}
+
+.icon-right:before {
+  content: "\e67b";
+}
+
+.icon-miandarao:before {
+  content: "\e67c";
+}
+
+.icon-send:before {
+  content: "\e67d";
+}
+
+.icon-more:before {
+  content: "\e67e";
+}
+
+.icon-link:before {
+  content: "\e67f";
+}
+
+.icon-MailList:before {
+  content: "\e680";
+}
+
+.icon-search:before {
+  content: "\e681";
+}
+
+.icon-topping:before {
+  content: "\e682";
+}
+
+.icon-team:before {
+  content: "\e683";
+}
+
+.icon-set:before {
+  content: "\e684";
+}
+
+.icon-top:before {
+  content: "\e685";
+}
+
+.icon-setting:before {
+  content: "\e686";
+}
+
+.icon-share:before {
+  content: "\e687";
+}
+
+.icon-translate:before {
+  content: "\e688";
+}
+
+.icon-message:before {
+  content: "\e689";
+}
+
+.icon-shrink:before {
+  content: "\e68a";
+}
+
+.icon-alarm:before {
+  content: "\e68b";
+}
+
+.icon-Chat_line:before {
+  content: "\e668";
+}
+
+.icon-Community_fill:before {
+  content: "\e669";
+}
+
+.icon-Community_line:before {
+  content: "\e66a";
+}
+
+.icon-Chat_fill:before {
+  content: "\e66b";
+}
+

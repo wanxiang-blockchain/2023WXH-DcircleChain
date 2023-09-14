@@ -1,0 +1,94 @@
+.tableContainer{
+  width: calc(100vw - 40px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid #F2F3F5;
+  margin-top: 10px;
+  border-radius: 8px;
+  //background: #FFFFFF;
+}
+@media (min-width: 1330px) {
+  .tableContainer{
+    width: 1290px;
+    overflow: hidden;
+  }
+}
+.tableWrap{
+  width: 1300px;
+  :global {
+    .ant-table-wrapper .ant-table{
+      border-radius: 0;
+    }
+    .ant-table-cell {
+      padding-left: 0;
+      background: #fff !important;
+    }
+    .ant-table-wrapper .ant-table-thead >tr>th:not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+      background: #FFFFFF;
+    }
+    .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      background: #FFFFFF;
+    }
+    .ant-popover-content {
+      max-width: 230px !important;
+    }
+  }
+}
+.tableWrap:not(:first-child){
+  margin-top: 6px;
+}
+.hide {
+  display: none;
+}
+.wrapCell {
+  display: flex;
+  align-items: center;
+}
+.WithIconCell{
+  width: 180px;
+}
+.tipsIcon {
+  width: 13px;
+  height: 13px;
+  display: flex;
+  margin-right: 2px;
+}
+.defineCell {
+  color: #1E65F3;
+  width: 180px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cell {
+  width: 180px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cell200 {
+  width: 200px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.titleS {
+  font-weight: bold;
+  display: inline-block;
+  width: 180px;
+}
+
+.titleSI {
+  font-weight: bold;
+  display: inline-block;
+  width: 180px;
+}
+
+.titleS200 {
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+}

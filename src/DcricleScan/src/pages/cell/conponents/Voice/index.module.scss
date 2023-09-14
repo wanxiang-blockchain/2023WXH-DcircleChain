@@ -1,0 +1,28 @@
+.audioWrap{
+  display: flex;
+}
+.playIcon{
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.duration{
+  margin-left: 4px;
+  font-size: 12px;
+  font-family: Gilroy-Medium, Gilroy, sans-serif;
+  font-weight: 500;
+  color: #323233;
+}
+
+.canvasWrap{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  .pHeight {
+    margin-right: 2px;
+    width: 2px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,49 @@
+
+.modalWrap{
+  width: 311px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  .modalMainWrap{
+    padding: 0 10px;
+    .titleWrap{
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      .icon{
+        width: 24px;
+        height: 24px;
+      }
+      .modalTitle{
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+    .tips1{
+      margin-top: 10px;
+      font-size: 14px;
+      color: #646566;
+      padding: 0 14px;
+    }
+    .tips2{
+      margin-top: 5px;
+      font-size: 14px;
+      color: #646566;
+      padding: 0 14px;
+    }
+  }
+  .known{
+    margin-top: 15px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-top: 1px solid #DBDBDB;
+    font-size: 16px;
+    font-weight: 500;
+    color: #73B224;
+  }
+}

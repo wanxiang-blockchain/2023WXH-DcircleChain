@@ -1,0 +1,35 @@
+.failWrap{
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .failImg{
+    width: 128px;
+    height: 128px;
+  }
+  .tips{
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #969799;
+  }
+  .failBtn{
+    width: 126px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(270deg, #71DA75 0%, #9ED85A 100%);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .failBtn:active{
+    opacity: 0.8;
+  }
+}

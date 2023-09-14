@@ -1,0 +1,163 @@
+.avatarBorderWrap {
+  position: relative;
+  width: 38px;
+  height: 34px;
+  .avatarBorder1{
+    position: absolute;
+    top: -4px;
+    left: 0;
+    transform: rotate(28deg);
+    width: 2px;
+    height: 23px;
+    border-radius: 1px;
+    background: linear-gradient(136deg, rgba(200, 200, 200, 0), rgba(3, 253, 211, 1));
+  }
+  .avatarBorderLeft30{
+    top: -5px;
+    left: 0px;
+    height: 20px;
+  }
+  .avatarBorderLeft64{
+    top: -6px;
+    left: 2px;
+    transform: rotate(28deg);
+    height: 35px;
+  }
+  .avatarBorderLeft110{
+    top: -10px;
+    left: 3px;
+    transform: rotate(28deg);
+    height: 64px;
+  }
+  .avatarBorder2{
+    position: absolute;
+    top: -16px;
+    left: 18px;
+    transform: rotate(90deg);
+    width: 2px;
+    height: 25px;
+    border-radius: 1px;
+    background: linear-gradient(180deg, rgba(200, 200, 200, 0), rgba(95, 37, 255, 1));
+  }
+  .avatarBorderTop30{
+    top: -13px;
+    left: 14px;
+    height: 20px;
+  }
+  .avatarBorderTop64{
+    top: -24px;
+    left: 30px;
+    height: 40px;
+  }
+  .avatarBorderTop110{
+    top: -42px;
+    left: 52px;
+    height: 70px;
+  }
+  .avatarBorder3{
+    position: absolute;
+    top: -4px;
+    right: 0;
+    transform: rotate(152deg);
+    width: 2px;
+    height: 23px;
+    border-radius: 1px;
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0), rgba(253, 65, 248, 1));
+  }
+  .avatarBorderRight30{
+    top: -5px;
+    right: 0;
+    height: 20px;
+  }
+  .avatarBorderRight64{
+    top: -7px;
+    right: 3px;
+    transform: rotate(152deg);
+    height: 36px;
+  }
+  .avatarBorderRight110{
+    top: -10px;
+    right: 7px;
+    transform: rotate(152deg);
+    height: 62px;
+  }
+  .avatarBorder4{
+    position: absolute;
+    bottom: -5px;
+    right: 1px;
+    transform: rotate(28deg);
+    width: 2px;
+    height: 23px;
+    border-radius: 1px;
+    background: linear-gradient(134deg, rgba(254, 183, 189, 1), rgba(255, 255, 255, 0));
+  }
+  .avatarBorderRightBottom30{
+    bottom: -5px;
+    right: 0px;
+    height: 20px
+  }
+  .avatarBorderRightBottom64{
+    bottom: -6px;
+    right: 3px;
+    transform: rotate(30deg);
+    height: 35px;
+  }
+  .avatarBorderRightBottom110{
+    bottom: -10px;
+    right: 7px;
+    transform: rotate(28deg);
+    height: 66px;
+  }
+  .avatarBorder5{
+    position: absolute;
+    bottom: -15px;
+    left: 18px;
+    transform: rotate(90deg);
+    width: 2px;
+    height: 25px;
+    border-radius: 1px;
+    background: #F1F1F1;
+  }
+  .avatarBorderBottom30{
+    bottom: -13px;
+    left: 14px;
+    height: 20px;
+  }
+  .avatarBorderBottom64{
+    bottom: -24px;
+    left: 31px;
+    height: 40px;
+  }
+  .avatarBorderBottom110{
+    bottom: -39px;
+    left: 53px;
+    height: 66px;
+  }
+  .avatarBorder6{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transform: rotate(152deg);
+    width: 2px;
+    height: 23px;
+    border-radius: 1px;
+    background: #F1F1F1;
+  }
+  .avatarBorderLeftBottom30{
+    bottom: -5px;
+    left: 0;
+    height: 20px;
+  }
+  .avatarBorderLeftBottom64{
+    bottom: -6px;
+    left: 2px;
+    transform: rotate(150deg);
+    height: 36px;
+  }
+  .avatarBorderLeftBottom110{
+    bottom: -10px;
+    left: 4px;
+    transform: rotate(152deg);
+    height: 64px;
+  }
+}

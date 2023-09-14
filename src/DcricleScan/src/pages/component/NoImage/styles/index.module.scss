@@ -1,0 +1,20 @@
+.noPosterWrap{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #F1FCF1 0%, #F6FCEF 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @keyframes rotateAni {
+    0%{-webkit-transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(90deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(270deg);}
+    100%{-webkit-transform:rotate(360deg);}
+  }
+  .noPosterImg{
+    width: 24px;
+    height: 24px;
+    animation: rotateAni 1s linear infinite;
+  }
+}

@@ -1,0 +1,327 @@
+.container{
+  //width: calc(100vw - 30px);
+  height: 253px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border-radius: 11px;
+  border: 1px solid #F2F3F5;
+  overflow: hidden;
+  position: relative;
+  .mainWrap{
+    width: 201px;
+    height: 168px;
+    position: relative;
+    .itemWrap{
+      position: absolute;
+      top: 0;
+      left: 0;
+      .number{
+        font-size: 14px;
+        font-weight: bold;
+        color: #323233;
+        //margin-left: 4px;
+      }
+      //.number0, .number1{
+      //  margin-right: 0;
+      //}
+      .number0{
+        margin-right: 4px;
+      }
+      .number1{
+        margin-right: 5px;
+      }
+      .number2{
+        //margin-left: -1px;
+      }
+      .number3{
+        margin-left: -2px;
+      }
+      .contentWrap{
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        .icon{
+          margin: 0 0 0 6px;
+        }
+      }
+      .contentWrap1{
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        .iconWrap{
+          margin: 0 0 0 12px;
+        }
+      }
+      .contentUserWrap{
+        margin-left: 58px;
+      }
+      .contentWrap2{
+        flex-direction: row-reverse;
+        .iconWrap{
+          margin: 0 6px 0 0;
+        }
+      }
+      .iconWrap{
+        position: relative;
+        width: 16px;
+        height: 16px;
+        .iconBg{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          opacity: 0.1;
+        }
+      }
+      .iconRowWrap{
+        margin: 4px 0;
+      }
+      .icon{
+        position: absolute;
+        top: 50%;
+        right: 3px;
+        transform: translateY(-50%);
+        font-size: 8px;
+      }
+      .activeIcon{
+        right: 1px;
+      }
+      .active2Icon{
+        top: 9px;
+        right: 1.5px;
+      }
+      .text{
+        font-size: 12px;
+        color: #969799;
+      }
+    }
+    .line0{
+      position: absolute;
+      top: -46px;
+      left: 64px;
+      width: 5px;
+      height: 85px;
+      border-radius: 10px;
+      transform: rotate(30deg);
+      z-index: 3;
+    }
+    .line1{
+      position: absolute;
+      top: 0;
+      left: 148px;
+      width: 5px;
+      height: 87px;
+      border-radius: 10px;
+      transform: rotate(90deg);
+      z-index: 4;
+    }
+    .line2{
+      position: absolute;
+      top: 36px;
+      left: 17px;
+      width: 5px;
+      height: 88px;
+      transform: rotate(150deg);
+      border-radius: 5px;
+      z-index: 5;
+    }
+    .line3{
+      position: absolute;
+      top: 22px;
+      right: 66px;
+      width: 5px;
+      height: 86px;
+      transform: rotate(210deg);
+      border-radius: 5px;
+      z-index: 6;
+    }
+    .line4{
+      position: absolute;
+      bottom: 0;
+      right: 72px;
+      width: 5px;
+      height: 86px;
+      transform: rotate(90deg);
+      border-radius: 5px;
+      z-index: 2;
+    }
+    .line5{
+      position: absolute;
+      bottom: 44px;
+      right: 20px;
+      width: 5px;
+      height: 84px;
+      transform: rotate(150deg);
+      border-radius: 5px;
+      z-index: 1;
+    }
+    .overPoints{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 3px;
+      height: 3px;
+      border: 1px solid #FFFFFF;
+      border-radius: 50%;
+    }
+    .noDataLine0{
+      position: absolute;
+      top: 6px;
+      left: 35px;
+      transform: rotate(29deg);
+      z-index: 3;
+    }
+    .noDataLine2{
+      position: absolute;
+      top: 8px;
+      left: 160px;
+      z-index: 5;
+    }
+    .noDataLine3{
+      position: absolute;
+      top: 78px;
+      right: 36px;
+      z-index: 6;
+    }
+    .noDataLine4{
+      position: absolute;
+      bottom: -30px;
+      right: 99px;
+      z-index: 2;
+    }
+    .noDataLine5{
+      position: absolute;
+      bottom: 5px;
+      right: 160px;
+      z-index: 1;
+    }
+    .itemWrap0{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 40px;
+      left: -30px;
+      top: 52px;
+      text-align: right;
+    }
+    .itemWrap1{
+      width: 100px;
+      left: -50px;
+      top: -32px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .itemUserWrap{
+      left: -42px;
+    }
+    .itemWrap2{
+      left: 144px;
+      top: -32px;
+    }
+    .itemWrap3{
+      width: 40px;
+      left: 192px;
+      top: 54px;
+    }
+    .itemWrap4{
+      width: 40px;
+      left: 133px;
+      top: 142px;
+    }
+    .itemWrap5{
+      width: 40px;
+      left: 20px;
+      top: 150px;
+    }
+    .bottomLine{
+      position: absolute;
+      bottom: -30px;
+      left: 96px;
+      width: 1px;
+      height: 84px;
+      border-left: 5px solid #F6F6F6;
+      transform: rotate(90deg);
+      border-radius: 5px;
+    }
+    .lastLine{
+      position: absolute;
+      bottom: 6px;
+      left: 34px;
+      width: 1px;
+      height: 84px;
+      border-left: 5px solid #F6F6F6;
+      transform: rotate(150deg);
+      border-radius: 5px;
+    }
+  }
+  .timeWrap{
+    width: 300px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .time{
+      font-size: 12px;
+      font-weight: 500;
+      color: #000000;
+    }
+    .timeLine{
+      width: 1px;
+      height: 9px;
+      opacity: 0.2;
+      background: #000000;
+      margin: 2px 4px 0 4px;
+    }
+    .version{
+      font-size: 12px;
+      font-weight: 500;
+      color: #000000;
+    }
+  }
+  .colorLineWrap{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 19px;
+    height: 90px;
+    background: #F6F6F6;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .colorLine{
+      width: 5px;
+      height: 74px;
+      background: linear-gradient(180deg, #E92727 0%, #FFAA00 17%, #8338EC 38%, #3A86FF 61%, #54EAD6 81%, #86E64F 100%);
+    }
+  }
+}
+@media (min-width: 1330px) {
+  .container{
+    width: 635px;
+    height: 300px;
+  }
+  //.line1{
+  //  left: 130px !important;
+  //}
+  .itemWrap1{
+    left: unset !important;
+    right: 150px !important;
+  }
+  .line2{
+    left: 0 !important;
+  }
+  .itemWrap2{
+    left: 160px !important;
+  }
+}

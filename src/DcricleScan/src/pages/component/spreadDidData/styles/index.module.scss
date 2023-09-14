@@ -1,0 +1,110 @@
+.allDataWrap{
+  display: flex;
+  .dataWrap{
+    margin-top: 15px;
+    width: 263px;
+    //background: linear-gradient(90deg, rgba(113,218,117,0.11) 0%, rgba(158,216,90,0) 100%);
+    border-radius: 8px;
+    position: relative;
+    padding-bottom: 16px;
+    .dataItem {
+      width: 100%;
+      border-left: 1px solid #fff;
+      padding: 16px 0 0 22px;
+      box-sizing: border-box;
+      position: relative;
+      .circle{
+        position: absolute;
+        left: -5.5px;
+        width: 8px;
+        height: 8px;
+        background-color: #FFFFFF;
+        border: 2px solid rgba(160, 216, 94, 1);
+        border-radius: 50%;
+      }
+
+      .line {
+        position: absolute;
+        left: 15px;
+        top: 28px;
+        width: 1px;
+        background: rgba(160, 216, 94, 1);
+        height: 100%;
+
+        .upJianTou {
+          display: none;
+        }
+
+        .horizontalLine {
+          background: #A0D85E;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -1px;
+          margin: auto;
+          width: 10px;
+          height: 1px;
+          .verticalLine{
+            width: 1px;
+            height: 10px;
+            background: #A0D85E;
+            position: absolute;
+            left: 9px;
+            top: -5px;
+          }
+        }
+      }
+      .timesItem {
+        width: 100px;
+        //flex: 1;
+        padding-left: 14px;
+        position: relative;
+      }
+    }
+    .firstDataItem{
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+    .dataItem:nth-child(1) {
+      .line {
+        .upJianTou {
+          display: block;
+          background: rgba(160, 216, 94, 1);
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -36px;
+          width: 1px;
+          height: 36px;
+          z-index: 0;
+          img {
+            width: 10px;
+            height: 10px;
+            display: flex;
+            z-index: 10;
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+      }
+    }
+    .dataItem:last-child {
+      padding-bottom: 0;
+      .line {
+        background: transparent;
+      }
+    }
+  }
+}
+.effectiveDataWrap{
+  height: 40px;
+  line-height: 40px;
+  padding-left: 36px;
+  margin-top: 14px;
+  background: linear-gradient(90deg, rgba(113,218,117,0.11) 0%, rgba(158,216,90,0) 100%);
+  border-radius: 12px;
+}

@@ -1,0 +1,232 @@
+.container{
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%);
+  padding: 10px 15px 20px 15px;
+  box-sizing: border-box;
+  .copyImg{
+    margin-left: 6px;
+    width: 12px;
+    height: 12px;
+  }
+  .titleWrap{
+    .title{
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+    }
+    .content{
+      width: 100%;
+      word-break: break-all; /* 将单词截断到多行 */
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+      line-height: 20px;
+    }
+  }
+  .logPanelWrap{
+    display: flex;
+  }
+  .overviewWrap{
+    margin-top: 15px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #F2F3F5;
+    box-sizing: border-box;
+    .title{
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+    }
+    .infoWrap{
+      margin-top: 10px;
+      .wrap_cell {
+        padding-top: 15px;
+        box-sizing: border-box;
+        .line {
+          height: 1px;
+          width: 100%;
+          background: #F6F6F6;
+        }
+      }
+      .wrapBtn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F6F6F6;
+        border-radius: 14px;
+        padding: 4px 15px;
+        box-sizing: border-box;
+        color: #000;
+        font-size: 14px;
+        img {
+          width: 12px;
+          height: 12px;
+          display: flex;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    .logItem {
+      width: 100%;
+      border-left: 1px solid #fff;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      position: relative;
+
+      .line {
+        position: absolute;
+        left: 0px;
+        top: 13px;
+        width: 1px;
+        background: #DBDBDB;
+        height: 100%;
+        .upJianTou {
+          display: none;
+        }
+        .quan {
+          background: #fff;
+          position: absolute;
+          left: -4px; right: 0px;
+          top: -7px;
+          margin: auto;
+          border: 1px solid #969799;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+        }
+      }
+      .logItemTitle {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .logItemTime {
+        margin: 8px 0px 5px;
+        color: #969799;
+        font-size: 12px;
+      }
+      .logItemVerHash {
+        color: #000000;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .logItemVerHashText {
+          color: #1E65F3;
+        }
+      }
+    }
+    .logItem:first-child {
+      .line {
+        .upJianTou {
+          display: block;
+          background: #DBDBDB;
+          position: absolute;
+          left: 0px; right: 0px;
+          top: -23px;
+          width: 1px;
+          height: 16px;
+          z-index: 0;
+          img {
+            width: 5px;
+            height: 6px;
+            display: flex;
+            z-index: 10;
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+      }
+    }
+    .logItem:last-child {
+      padding-bottom: 0px;
+      .line {
+        background: #fff;
+      }
+    }
+  }
+  @media (min-width: 1330px) {
+    .overviewWrap{
+      flex: 1;
+    }
+    .logsOverviewWrap{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+  .btnWrap{
+    margin-top: 15px;
+    display: flex;
+    .btn{
+      margin-right: 10px;
+      width: 48px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #DBDBDB;
+      font-size: 14px;
+      font-weight: 400;
+      color: #646566;
+    }
+    .activeBtn{
+      color: #FFFFFF;
+      background: linear-gradient(270deg, #71DA75 0%, #9ED85A 100%);
+    }
+  }
+  .tableWrap{
+    margin-top: 6px;
+    background: #FFFFFF;
+  }
+  :global{
+    .ant-table-wrapper .ant-table-thead >tr>th{
+      background: #FFFFFF !important;
+    }
+  }
+}
+
+@media (min-width: 1330px) {
+  body{
+    background: #FCFCFE;
+  }
+  .container{
+    width: 1290px;
+    margin: 0 auto;
+    background: #FCFCFE;
+    padding: 82px 0 70px 0;
+  }
+  .overviewWrap{
+    width: 1290px;
+    box-sizing: border-box;
+  }
+  .titleWrap{
+    display: flex;
+    align-items: center;
+    .title{
+      width: 136px;
+      margin: 0 !important;
+    }
+    .content{
+      font-weight: 400 !important;
+      margin-left: 10px;
+    }
+  }
+}

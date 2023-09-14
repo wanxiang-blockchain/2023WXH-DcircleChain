@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wrap_app {
+  position: relative;
+}
+.public_status {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  box-shadow: inset 0px 1px 0px 0px #E7E7E7;
+  background: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+.public_status .ant-modal {
+  height: 100%;
+}
+.public_status .ant-modal .ant-modal-content {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.public_status .ant-modal .ant-modal-content .ant-modal-body {
+  position: relative;
+}
+.public_status .wrap_wx_zhiying {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  width: 251px;
+  height: 100px;
+  background: transparent;
+  display: flex;
+}
+.public_status .wrap_wx_zhiying img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.public_right {
+  padding: 5px 27px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #fff;
+  background: linear-gradient(270deg, #71DA75 0%, #9ED85A 100%);
+}
+.public_left {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.public_icon_wrap {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 9px;
+  margin-right: 10px;
+}
+.public_icon {
+  width: 100%;
+  height: 100%;
+}
+.public_left_wrap_right_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.public_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 2px;
+}
+.public_title_mini {
+  font-size: 12px;
+  font-weight: 400;
+  color: #969799;
+}
+.public_del {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.iframes {
+  width: 0;
+  height: 0;
+}

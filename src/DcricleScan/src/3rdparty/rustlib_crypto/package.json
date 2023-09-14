@@ -1,0 +1,14 @@
+{
+  "name": "rustlib_crypto",
+  "version": "0.1.0",
+  "files": [
+    "rustlib_crypto_bg.wasm",
+    "rustlib_crypto.js",
+    "rustlib_crypto.d.ts"
+  ],
+  "module": "rustlib_crypto.js",
+  "types": "rustlib_crypto.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
