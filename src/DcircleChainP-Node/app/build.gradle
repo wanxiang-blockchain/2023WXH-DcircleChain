@@ -1,0 +1,120 @@
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+apply from:this.rootProject.file("./graldecommon/modle.gradle")
+apply plugin: 'com.android.application'
+apply plugin: 'multi-languages'
+
+
+android {
+    defaultConfig {
+        applicationId "demo.dcircle.identity"
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+        versionName getCurrentBranch()
+        versionCode getCommitCount()
+        setProperty("archivesBaseName", getAppName())
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    buildTypes {
+        debug {
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def name = getAppName()
+            output.outputFileName = "${name}.apk"
+        }
+    }
+}
+multiLanguages {
+    enable = true
+}
+
+def getAppName(){
+    def branch = getCurrentBranch()
+    def versionCode = getCommitCount()
+    def commitId = getCommitId().substring(0,7)
+    def today = new Date()
+    def day = today.format('yyyyMMdd')
+    def hour = today.format('HHmmss')
+    def channel = getChannel()
+    def env = getEnv()
+
+    return "demo_dcircle_identity_${branch}_${commitId}_${versionCode}_${day}_${hour}.${env}.${channel}"
+}
+
+static def getCurrentBranch(){
+    def branch = ''
+    def process = 'git rev-parse --abbrev-ref HEAD'.execute()
+    process.in.eachLine { line ->
+        branch = line
+    }
+    return branch
+}
+
+def getEnv(){
+    def props = new Properties()
+    props.load(new FileInputStream(file('config.properties')))
+    def env = props['env']
+    return env
+}
+
+def getChannel(){
+    def props = new Properties()
+    props.load(new FileInputStream(file('config.properties')))
+    def channel = props['channel']
+    return channel
+}
+
+static def getCommitId() {
+    def commitId = ''
+    // 获取提交信息
+    def process = 'git rev-parse --short HEAD'.execute()
+    process.in.eachLine { line ->
+        commitId = line
+    }
+    return commitId
+}
+
+static def getCommitCount() {
+    def times = 0
+    // 获取提交信息
+    def process = 'git rev-list --count --all'.execute()
+    process.in.eachLine { line ->
+        times = Integer.parseInt(line)
+    }
+    return times
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.4.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation project(path: ':login')
+    implementation project(path: ':image_preview')
+    implementation project(path: ':picture_library')
+    implementation project(path: ':thridpart')
+    implementation project(path: ':did')
+    implementation project(path: ':login')
+    implementation project(path: ':node')
+    implementation project(path: ':deapps')
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+}

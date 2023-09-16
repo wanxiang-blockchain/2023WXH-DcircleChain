@@ -1,0 +1,36 @@
+package com.github.xpwu.ktdbtable.example
+
+import android.database.sqlite.SQLiteDatabase
+import com.github.xpwu.ktdbtable.*
+import com.github.xpwu.ktdbtble.annotation.Column
+import com.github.xpwu.ktdbtble.annotation.PrimaryKey
+import com.github.xpwu.ktdbtble.annotation.Table
+
+@Table("msg")
+class Msg {
+  companion object
+
+  @Column("id")
+  var Id: String? = null
+  @Column("name", primaryKey = PrimaryKey.MULTI_DESC)
+  var Name: String = "xp"
+}
+
+fun Msg.Companion.Migrators(): Map<Version, Migration> {
+  return mapOf(
+    Version(0, 2) to {
+        db1 ->
+      val db = db1.UnderlyingDB as? SQLiteDatabase
+      db?.execSQL("")}
+  )
+}
+
+fun Msg.Companion.update(db: DB<SQLiteDatabase>) {
+  val name = Msg.TableNameIn(db)
+  db.UnderlyingDB.update(name, Msg().ToContentValues(), "", null)
+}
+
+
+//fun Msg.Companion.Initializer(): Collection<User> {
+//  return emptyList()
+//}

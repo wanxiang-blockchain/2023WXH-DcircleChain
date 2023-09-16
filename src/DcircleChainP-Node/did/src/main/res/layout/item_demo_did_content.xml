@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_data_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <FrameLayout
+            android:id="@+id/demo_did_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_image_gray">
+
+            <com.yhtech.image_preview.ui.widget.OSSImageView
+            android:id="@+id/demo_did_img"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_75"
+            android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/view_lock_img"
+                android:elevation="@dimen/dp_1"
+                android:layout_width="23dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_height="@dimen/dp_19"
+                android:layout_gravity="end|bottom"
+                android:src="@mipmap/ic_did_img_tag"/>
+        </FrameLayout>
+        <com.base.baseui.widget.others.GilroyTextView
+            android:id="@+id/tv_did_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp_86"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/demo_did_img1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="hhhhhhh"
+            app:gilroyFont="regular"
+            android:textSize="@dimen/sp_12"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_all_glid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_data_bind">
+    <ImageView
+        android:id="@+id/ic_demo_glid"
+        android:layout_width="@dimen/dp_9"
+        android:layout_height="@dimen/dp_10"
+        android:src="@mipmap/ic_demo_did_content_glid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_did_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_57"
+        android:textColor="#4A5EF8"
+        android:layout_marginStart="@dimen/dp_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ic_demo_glid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:gilroyFont="regular"
+        android:ellipsize="middle"
+        android:maxLines="1"
+        android:text="aaaasssssssaa"
+        android:textSize="@dimen/sp_10"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

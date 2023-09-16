@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@+id/card_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/sp_10"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/title_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_71da75_to_9ed85a_alpha10" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10">
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_push_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容已被更新"
+                android:textColor="@color/black"
+                app:gilroyFont="medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_push_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该内容作者已对文章进行了版本更新，你可以查看历史版本。"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_10"
+                app:gilroyFont="regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_push_title" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                app:gilroyFont="medium"
+                android:id="@+id/btn_push_check_history_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_71da75_to_9ed85a_r24"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:paddingVertical="@dimen/dp_3"
+                android:text="@string/view_historical_version"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_push_desc" />
+
+            <ImageView
+                android:id="@+id/iv_push_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_close_green_10px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

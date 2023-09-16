@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:layout_marginTop="@dimen/dp_1"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#99000000"
+        android:textSize="@dimen/sp_12"
+        app:gilroyFont="regular"
+        tools:text="2023/04/11 UTC 00:00" />
+
+    <View
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dp_9"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:layout_gravity="center_vertical"
+        android:background="#33000000" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_dcirclescan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dcirclescan"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_73b224"
+        app:gilroyFont="regular" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:layout_marginTop="@dimen/dp_1"
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="ver.01"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:gilroyFont="regular" />
+
+
+</LinearLayout>

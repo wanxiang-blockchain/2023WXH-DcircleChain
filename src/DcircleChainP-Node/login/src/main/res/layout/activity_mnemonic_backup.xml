@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MnemonicBackupActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="@dimen/dp_0">
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_20"
+            android:src="@mipmap/ic_back_black"
+            android:layout_marginStart="@dimen/dp_16"/>
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:src="@mipmap/ic_demo_did_photo"
+            app:layout_constraintStart_toEndOf="@id/iv_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"/>
+
+        <com.base.baseui.widget.others.GilroyTextView
+            android:id="@+id/tv_address"
+            android:maxLines="2"
+            app:layout_constraintStart_toEndOf="@id/img_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/wrap_scroll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_backup_mnemonic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backup_mnemonic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                app:gilroyFont="medium"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_20"/>
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/backup_mnemonic_describe"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_14"
+                app:gilroyFont="regular"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginHorizontal="@dimen/dp_30"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_mnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_backcp_mnemonic_bg"
+                tools:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginHorizontal="@dimen/dp_30"/>
+
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_backup_mnemonic_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/backup_tips"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_14"
+                app:gilroyFont="regular"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginHorizontal="@dimen/dp_30"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/cv_backup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_52"
+        android:layout_marginBottom="54dp"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:background="@drawable/btn_ff1dcdff_to_ff5543f6"
+        android:gravity="center"
+        android:text="@string/backup_bnt_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:gilroyFont="medium" />
+</LinearLayout>

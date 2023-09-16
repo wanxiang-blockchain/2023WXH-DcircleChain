@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GilroyTextView">
+        <attr name="gilroyFont">
+            <enum name="heavy" value="0" />
+            <enum name="black" value="1" />
+            <enum name="extra_bold" value="2" />
+            <enum name="bold" value="3" />
+            <enum name="medium" value="4" />
+            <enum name="regular" value="5" />
+            <enum name="light" value="6" />
+            <enum name="thin" value="7" />
+        </attr>
+    </declare-styleable>
+    <!-- 自定义四角矩形ImageView 的四个圆角属性 -->
+    <declare-styleable name="BorderRoundImageView">
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DialogTitleView">
+        <attr name="titleText" format="reference|string" />
+        <attr name="infoVisable" format="boolean" />
+        <attr name="inifoIcon" format="reference" />
+        <attr name="showExit" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleView">
+        <attr name="title" format="reference|string" />
+        <attr name="dividerShow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonIntroductionView">
+        <attr name="commonTitle" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="DidStatusView">
+        <attr name="didContent" format="reference|string" />
+    </declare-styleable>
+
+    <!-- banner indicator -->
+    <declare-styleable name="BannerIndicatorView">
+        <!-- 显示多少个 indicator -->
+        <attr name="indicator_count" format="integer" />
+        <!-- indicator 宽高 -->
+        <attr name="indicator_select_width" format="dimension" />
+        <attr name="indicator_select_height" format="dimension" />
+        <attr name="indicator_normal_width" format="dimension" />
+        <attr name="indicator_normal_height" format="dimension" />
+        <!-- indicator 之间边距 -->
+        <attr name="indicator_margins" format="dimension" />
+        <!-- indicator 颜色 -->
+        <attr name="indicator_select_color" format="reference" />
+        <attr name="indicator_normal_color" format="reference" />
+
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView1">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerTopLeftRadius" format="dimension" />
+        <attr name="cornerTopRightRadius" format="dimension" />
+        <attr name="cornerBottomLeftRadius" format="dimension" />
+        <attr name="cornerBottomRightRadius" format="dimension" />
+        <attr name="oval" format="boolean" />
+        <attr name="useNft" format="boolean" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingButtonView">
+        <attr name="btn_text" format="string" />
+        <attr name="sizeHeight" format="dimension" />
+        <attr name="btn_background" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PersonOperationIcon">
+        <attr name="android:src" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ChatMessageOpIcon">
+        <attr name="android:src" />
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="cpb_background_color" format="color" />
+        <attr name="cpb_progress_color" format="color" />
+        <attr name="cpb_stroke_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ManyShapeAvatarImageView">
+        <attr name="shapeType">
+            <enum name="center" value="7" />
+            <enum name="leftTop" value="1" />
+            <enum name="left" value="2" />
+            <enum name="leftBottom" value="3" />
+            <enum name="rightBottom" value="4" />
+            <enum name="right" value="5" />
+            <enum name="rightTop" value="6" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RadarView">
+        <attr name="radar_width" format="integer" />
+        <attr name="radar_layer" format="integer" />
+        <attr name="rotation_enable" format="boolean" />
+        <attr name="web_mode" format="enum">
+            <enum name="polygon" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="max_value" format="float" />
+
+        <attr name="vertex_line_color" format="color" />
+        <attr name="vertex_line_width" format="dimension" />
+        <attr name="layer_line_color" format="color" />
+        <attr name="layer_line_width" format="dimension" />
+        <attr name="vertex_text_color" format="color" />
+        <attr name="vertex_text_size" format="dimension" />
+        <attr name="vertex_icon_size" format="dimension" />
+        <attr name="vertex_icon_position" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+            <enum name="center" value="5" />
+        </attr>
+        <attr name="vertex_icon_margin" format="dimension" />
+        <attr name="center_text_color" format="color" />
+        <attr name="center_text_size" format="dimension" />
+        <attr name="vertex_text_offset" format="dimension" />
+
+        <attr name="center_text" format="string" />
+        <attr name="vertex_text" format="reference" />
+
+
+        //Deprecated
+        <attr name="radar_line_color" format="color" />
+        <attr name="radar_line_enable" format="boolean" />
+        <attr name="radar_line_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LoadingButton">
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+</resources>

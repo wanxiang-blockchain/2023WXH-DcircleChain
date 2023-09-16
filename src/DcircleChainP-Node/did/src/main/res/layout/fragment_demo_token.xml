@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f6f6f6"
+    android:paddingTop="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_15"
+    android:layout_marginHorizontal="@dimen/dp_20"
+    android:paddingHorizontal="@dimen/dp_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/dp_10"
+        android:background="@drawable/shape_bg_share_did"
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_hope_ing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_76"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_969799"
+        app:gilroyFont="regular"
+        android:background="@drawable/shape_please_wait_bg"
+        android:text="敬请期待"
+        android:layout_width="89dp"
+        android:layout_height="@dimen/dp_30"
+        android:elevation="50dp"/>
+
+    <View
+        android:background="@drawable/shape_bg_app_token"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

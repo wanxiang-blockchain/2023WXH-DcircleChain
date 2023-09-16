@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_did_article_waterfall_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_17"
+        android:orientation="vertical">
+        <com.base.baseui.widget.others.GilroyTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            tools:text="0x8594dc…B20bd272"
+            android:textColor="#ff079c06"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginHorizontal="@dimen/dp_11"
+            app:gilroyFont="regular" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_11"
+            app:layout_constraintTop_toBottomOf="@+id/ll_title">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dp_7"
+                android:layout_marginStart="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/cl_user_info">
+
+                <com.yhtech.image_preview.ui.widget.OSSImageView
+                    android:id="@+id/avatar_view"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="@dimen/dp_64"
+                    android:src="@mipmap/ic_logo" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+                >
+                <com.base.baseui.widget.others.GilroyTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    app:gilroyFont="medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/iv_arrow"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_arrow"
+                    tools:text="好设计是尽可能的无设计，好尽可能好尽可能好尽可能尽可能尽可能尽可能尽可能尽可能尽可能尽可能尽可能"
+                    />
+
+                <com.base.baseui.widget.others.GilroyTextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginEnd="@dimen/dp_22"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="#ff9e9e9e"
+                    android:textSize="@dimen/sp_12"
+                    app:gilroyFont="regular"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                    tools:text="根据对比来思考并比来比来让人逻辑来思考并比来比来让人逻来思考并比来比来让人逻辑…" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_marginEnd="@dimen/dp_17"
+                android:src="@mipmap/ic_arrow_right_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_content"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_43"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/right_did"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

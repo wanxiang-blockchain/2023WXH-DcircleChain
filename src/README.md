@@ -1,3 +1,7 @@
-[DcircleSocial.apk](..%2Fdemo%2FDcircleSocial.apk) 是Dcircle Chain生态的首个原生Web3社交应用， 代码由第 3 方开发和掌控，DcircleChain 只有 apk。
+### Dcircle Chain 黑客松代码源码：
 
-DcircleScan 是Dcircle Chain （L3）区块链浏览器，透明公开可访问，支持用户在链上对节点行为、交易、验证数据进行实时查询追溯。
+1. [DcircleChain](DcircleChain) 链的 Demo 相关代码
+2. [DcircleChainP-Node](DcircleChainP-Node) 链的前端 Demo 代码
+3. [DcricleScan](DcricleScan)  Dcircle Chain 区块链浏览器代码
+4. [DcircleSocial.apk](https://github.com/wanxiang-blockchain/2023WXH-DcircleChain/releases/download/DcircleChain/DcircleSocial.apk) 基于 Dcircle Chain 开发的第 3 方应用提供给 Dcircle Chain 的测试 Demo。
+

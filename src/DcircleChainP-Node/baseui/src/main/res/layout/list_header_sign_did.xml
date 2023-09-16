@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_30"
+    android:paddingBottom="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_20">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:src="@mipmap/ic_sign_d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        app:gilroyFont="medium"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DcircleChain Mainnet" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        app:gilroyFont="regular"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textColor="@color/color_969799"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="@string/number_signatures"
+        app:gilroyFont="regular"
+        android:textColor="@color/color_969799"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

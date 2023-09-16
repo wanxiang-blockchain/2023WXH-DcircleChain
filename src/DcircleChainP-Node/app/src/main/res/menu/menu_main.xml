@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_chat"
+        android:checked="true"
+        android:icon="@drawable/selector_tab_message"
+        android:title="DID"/>
+    <item
+        android:id="@+id/action_main"
+        android:title="Node"
+        android:icon="@drawable/selector_tab_releation" />
+    <item
+        android:id="@+id/action_did"
+        android:title="DeApps"
+        android:icon="@drawable/selector_tab_did" />
+</menu>

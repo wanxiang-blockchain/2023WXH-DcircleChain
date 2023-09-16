@@ -1,0 +1,68 @@
+
+android {
+    compileSdkVersion  33
+    defaultConfig {
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a', "arm64-v8a"//, "x86", "x86_64", "armeabi"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    //但继续构建，即使发现错误:
+        abortOnError false
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    sourceSets {
+        main{
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+            java {
+                exclude 'com/alibaba/android/arouter/routes/**'
+            }
+        }
+
+
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.4.1'
+    api 'com.google.android.material:material:1.6.0'
+    api 'androidx.core:core-ktx:1.8.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.8.0'
+    kapt 'com.alibaba:arouter-compiler:1.5.1'
+}

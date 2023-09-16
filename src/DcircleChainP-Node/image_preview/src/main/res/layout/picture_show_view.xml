@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.luck.picture.lib.widget.longimage.SubsamplingScaleImageView
+        android:id="@+id/img_pic"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.luck.picture.lib.widget.longimage.SubsamplingScaleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_pic_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="@dimen/dp_25"
+        app:layout_constraintTop_toTopOf="@id/img_pic_thumb"
+        app:layout_constraintBottom_toBottomOf="@id/img_pic_thumb"
+        android:visibility="gone"
+        android:src="@mipmap/ic_image_load"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cpb_stroke_width="@dimen/dp_2"
+        android:id="@+id/circleProgressBar"
+        app:cpb_background_color="#B3000000"
+        app:cpb_progress_color="@color/white"
+        android:layout_height="25dp">
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

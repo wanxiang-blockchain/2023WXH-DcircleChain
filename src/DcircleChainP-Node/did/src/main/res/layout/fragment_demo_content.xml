@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_15"
+    android:layout_marginHorizontal="@dimen/dp_20"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:layout_marginVertical="@dimen/dp_20"
+    android:background="@color/color_f6f6f6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:background="@drawable/shape_bg_share_did"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f15151"
+        android:minHeight="60dp"
+        android:visibility="gone"
+        android:paddingVertical="@dimen/dp_16"
+        android:src="@mipmap/icon_delete_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

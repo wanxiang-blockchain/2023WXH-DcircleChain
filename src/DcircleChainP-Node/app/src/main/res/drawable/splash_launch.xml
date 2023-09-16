@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <!--矩形 作为背景色-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <!--启动页面logo-->
+    <item android:gravity="center">
+        <bitmap
+
+            android:src="@mipmap/bg_splash" />
+    </item>
+
+</layer-list>

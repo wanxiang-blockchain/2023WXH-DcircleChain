@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yhtech.did.ui.wedgit.DidMoreContentUpdate
+        android:layout_width="match_parent"
+        android:id="@+id/did_more_content_tips"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="@dimen/dp_0"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_15"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        app:cardBackgroundColor="#F6F6F6"
+        android:layout_width="match_parent"
+        android:id="@+id/did_contet_now_see"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/dp_9"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_height="wrap_content">
+            <com.base.baseui.widget.others.GilroyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:gilroyFont="medium"
+                android:text=""
+                android:id="@+id/tv_version_name"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                />
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_history_go_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:gilroyFont="medium"
+                android:drawableEnd="@mipmap/ic_arrow_right_grey"
+                android:text="@string/view_historical_version"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.base.baseui.widget.others.GilroyTextView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        tools:text="What on Earth is Web3?" />
+    <com.base.baseui.widget.others.GilroyTextView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:textColor="#99000000"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="What on Earth is Web3?" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DidItemView">
+        <attr name="title" format="string"/>
+        <attr name="titleColor" format="color"/>
+    </declare-styleable><declare-styleable name="OSSImageView">
+        <attr name="placeholder" format="reference"/>
+        <attr name="roundAnimte" format="boolean"/>
+        <attr name="backgroundRoot" format="reference"/>
+    </declare-styleable>
+</resources>

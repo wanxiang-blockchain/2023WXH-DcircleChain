@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+apply from:this.rootProject.file("./graldecommon/modle.gradle")
+android {
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+    }
+
+    
+    resourcePrefix 'ucrop_'
+}
+
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.3.1"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.activity:activity:1.4.0"
+    implementation "androidx.fragment:fragment:1.3.6"
+    implementation "androidx.concurrent:concurrent-futures:1.1.0"
+    implementation "androidx.annotation:annotation-experimental:1.1.0"
+    implementation "androidx.exifinterface:exifinterface:1.3.3"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+    implementation "androidx.camera:camera-view:1.0.0-alpha30"
+    implementation "androidx.transition:transition:1.4.1"
+    implementation "androidx.camera:camera-lifecycle:1.1.0-alpha10"
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    api project(path: ':thridpart')
+    api project(path:':baseui')
+    api project(path: ':foundation')
+}

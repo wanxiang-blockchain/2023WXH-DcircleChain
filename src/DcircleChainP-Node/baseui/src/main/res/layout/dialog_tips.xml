@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="@dimen/dp_19"
+                android:gravity="center_horizontal"
+                tools:text="Tips"
+                android:textColor="#ff000000"
+                android:textSize="17sp"
+                app:gilroyFont="medium" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_15"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="@dimen/dp_2"
+                app:gilroyFont="regular"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                tools:text="Are you sure you want to exit Dcircle on this device?"
+                android:textColor="#ff000000"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#3C3C43"
+                android:alpha="0.2"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.base.baseui.widget.others.GilroyTextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/cancel"
+                    android:textColor="#1183ff"
+                    android:textSize="17sp"
+                    app:gilroyFont="medium" />
+
+                <View
+                    android:id="@+id/buttonDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.2"
+                    android:background="#3C3C43" />
+
+                <com.base.baseui.widget.others.GilroyTextView
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/dp_10"
+                    android:text="@string/confirm"
+                    android:textColor="#F15151"
+                    android:textSize="17sp"
+                    app:gilroyFont="medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+
+    compileSdkVersion  33
+    defaultConfig {
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        //但继续构建，即使发现错误:
+        abortOnError false
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+/*    buildTypes {
+        release {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        googleRelease {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        releaseForDev {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        beta {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        googleBeta {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        alpha {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        googleAlpha {
+            minifyEnabled rootProject.ext.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled rootProject.ext.minifyEnabled
+        }
+        googleDebug {
+            minifyEnabled rootProject.ext.minifyEnabled
+        }
+
+        local{
+            minifyEnabled rootProject.ext.minifyEnabled
+        }
+    }*/
+
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.9'
+}

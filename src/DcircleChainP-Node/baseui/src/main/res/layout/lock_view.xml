@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/li_lock"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/img_lock"
+        android:src="@mipmap/ic_group_lock"
+        android:layout_width="132dp"
+        android:layout_height="132dp"/>
+    <com.base.baseui.widget.others.GilroyTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/waitUnlockText"
+        android:layout_height="wrap_content"
+        android:text="did已加密，等待所有者解密"
+        android:textColor="#ff969799"
+        android:textSize="14sp"
+        />
+</LinearLayout>

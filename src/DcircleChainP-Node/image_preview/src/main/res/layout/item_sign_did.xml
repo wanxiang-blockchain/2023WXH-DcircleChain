@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.base.baseui.widget.others.GilroyTextView
+        android:id="@+id/tv_sign_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="签名1"
+        android:textColor="@color/color_969799"
+        app:gilroyFont="regular" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_8"
+        android:layout_marginHorizontal="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_8"
+        app:cardElevation="0dp"
+        app:contentPadding="@dimen/dp_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TxnHash"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_16"
+                app:gilroyFont="regular" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_txn_ash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                app:gilroyFont="regular"
+                android:text="0x719B90d12829319B90d119B90d128Fcea219B90d"
+                android:textColor="@color/black" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="Method"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_16"
+                app:gilroyFont="regular" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:id="@+id/tv_type"
+                app:gilroyFont="regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/set_content_summary_information"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <com.base.baseui.widget.others.GilroyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="Message"
+                android:textColor="@color/color_969799"
+                android:textSize="@dimen/sp_16"
+                app:gilroyFont="regular" />
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                app:cardBackgroundColor="#F6F6F6"
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/dp_0"
+                android:layout_height="wrap_content">
+
+                <com.base.baseui.widget.others.GilroyTextView
+                    android:id="@+id/tv_information"
+                    android:padding="@dimen/dp_10"
+                    android:textSize="10sp"
+                    app:gilroyFont="regular"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签名原数据"
+                    android:textColor="#969799" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
